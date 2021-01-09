@@ -7,9 +7,10 @@
 // выведено '1 - Mango', а для индекса 2 выведет '3 - Ajax'.
 
 const logItems = function(array) {
-    
-  for (let i=0; i<array.lenght; i+=1){
-  console.log(array(i));
+   
+    for(var i = 0; i < array.length;i+=1){
+    console.log(array[i]);
+  
 }
 };
 // Вызовы функции для проверки работоспособности твоей реализации.
