@@ -5,18 +5,13 @@
 // возвращает false. Слова в строке могут быть в произвольном регистре.
 
 const checkForSpam = function (message) {
-  let newStr = message.toLowerCase();
-  //console.log(newStr);
-  let arr = newStr.split(" ");
-  if (
-    arr.indexOf("sale") != -1 ||
-    arr.indexOf("[spam]") != -1
-  ) {
-    return true;
-  } else {
+ 
+    const str = message.toLowerCase();
+    if (str.includes('spam') || str.includes('sale')) {
+      return true;
+    }
     return false;
-  }
-};
+  };
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.
  */
